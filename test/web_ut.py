@@ -13,7 +13,7 @@ class ISelenium(unittest.TestCase):
     def get_config(self):
         config = configparser.ConfigParser()
         # windows下是os.environ['HOMEPATH']
-        config.read('../iselenium.ini')
+        config.read('iselenium.ini')
         return config
 
     def tearDown(self):
